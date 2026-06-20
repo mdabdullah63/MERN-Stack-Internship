@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<p id="demo"></p>
+<body>
+    <script>
+    let a = "hello js";
+    let b = 'hello java';
+    let c = `Hello World!`;
+    let d = `Hello
+    jksndc
+    kjdcnjkn
+    ;njdsvncs;djk,csdk World!`;
+
+    console.log(`wellcome ${a},${b} to this`);
+
+    let x = 2.3;
+    let y = 3;
+    console.log(`total ${(x * y).toFixed(2)}`);
+
+    let header = "Template Strings";
+    let tags = ["template strings", "javascript", "es6"];
+
+    let html = `<h2>${header}</h2>
+    <ul>`;
+
+        for (const x of tags) {
+        html += `<li>${x}</li>`;
+        }
+
+        html += `</ul>`;
+    document.getElementById("demo").innerHTML=html;
+    </script>
+</body>
+
+</html>

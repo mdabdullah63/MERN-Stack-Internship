@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise comcept in java script</title>
+</head>
+
+<body>
+    <script>
+        const promiseOne = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log('Async is complete');
+            }, 1000)
+        })
+        promiseOne.then(() => {
+            console.log('promise is consumed')
+        })
+        new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log('Async task 2');
+                resolve();
+            }, 1000)
+        })
+            .then(() => {
+                console.log('Async 2 resolve')
+            })
+        const promiseThree = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve({
+                    username: "md abdullah",
+                    mail: "mdabdullah67@gmail.com"
+                });
+            }, 1000)
+        })
+        promiseThree.then((user) => {
+            console.log(user);
+        })
+        const promiseFour = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                let error = true;
+                if (!true) {
+                    resolve({
+                        username: "md abdullah",
+                        password: "123"
+                    })
+                } else {
+                    reject('EOROR Something went worng');
+                }
+
+            })
+        })
+
+        promiseFour.then((user) => {
+            console.log("user")
+            return user.username;
+        })
+        .then((username)=>{
+            console.log(username);
+            
+        }).catch((e)=>{
+            console.log(e);
+            
+        })
+
+    </script>
+
+</body>
+
+</html>

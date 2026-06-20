@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Flow Concept</title>
+</head>
+
+<body>
+    <h1>Control Flow</h1>
+    <p id="age"></p>
+    <p id="country"></p>
+    <p id="greeting"></p>
+    <p id="aduld"></p>
+    <p id="day"></p>
+
+    <script>
+        let age = Number(prompt("Enter your age"));
+        // if-else
+        if (age >= 18) {
+            document.getElementById("age").innerHTML = "You can drive!";
+        } else {
+            document.getElementById("age").innerHTML = "You cannot drive! in India";
+        }
+        let country = prompt("Enter your country name");
+
+        // nested if-else
+        if (country === "USA") {
+            if (age >= 16) {
+                document.getElementById("country").innerHTML = "You can drive in USA";
+            } else {
+                document.getElementById("country").innerHTML = "You cannot drive in USA";
+            }
+        } else if (age >= 18) {
+            document.getElementById("country").innerHTML = "You can drive in your country";
+        } else {
+            document.getElementById("country").innerHTML = "You cannot drive in your country";
+        }
+
+
+        const time = new Date().getHours();
+        let greeting;
+        if (time < 10) {
+            greeting = "Good morning";
+        } else if (time < 20) {
+            greeting = "Good day";
+        } else {
+            greeting = "Good evening";
+        }
+        document.getElementById("greeting").innerHTML = greeting;
+        // ternary operator
+        document.getElementById("aduld").innerHTML = (age >= 18) ? "Adult" : "Minor";
+        let day;
+        let date = new Date().getDay();
+
+        // switch-case
+        switch (date) {
+            case 0: day = "Sunday"; break;
+            case 1: day = "Monday"; break;
+            case 2: day = "Tuesday"; break;
+            case 3: day = "Wednesday"; break;
+            case 4: day = "Thursday"; break;
+            case 5: day = "Friday"; break;
+            case 6: day = "Saturday"; break;
+        }
+        document.getElementById("day").innerHTML = "Today is " + day;
+    </script>
+</body>
+
+</html>

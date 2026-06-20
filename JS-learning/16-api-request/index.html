@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Concept</title>
+</head>
+
+<body style="background-color:#212121; color:white;">
+
+<script>
+    // GitHub API URL to fetch user data
+    const request = 'https://api.github.com/users/mdabdullah63';
+
+    // Create HTTP request object
+    const xhr = new XMLHttpRequest();
+
+    // Initialize GET request
+    xhr.open('GET', request);
+
+    xhr.onreadystatechange = function () {
+
+        // Check if request is completed successfully
+        if (xhr.readyState === 4 && xhr.status === 200) {
+
+            // Convert JSON response into JS object
+            let data = JSON.parse(this.responseText);
+
+            // Create image element to display profile picture
+            const img = document.createElement("img");
+            img.src = data.avatar_url;
+            img.style.width = "200px";
+            img.style.height = "200px";
+
+            // Create heading to show user name
+            const name = document.createElement("h2");
+            name.textContent = data.name;
+
+            // Add elements to webpage
+            document.body.appendChild(img);
+            document.body.appendChild(name);
+        }
+    };
+
+    // Send request to API
+    xhr.send();
+</script>
+
+</body>
+</html>

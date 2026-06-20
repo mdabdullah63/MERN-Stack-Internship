@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables & data types</title>
+</head>
+<body>
+    <h1>javascript variables & data types</h1>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <script>
+        let a = 3
+        let b = 4
+        let c = a + b
+        document.getElementById("demo1").innerHTML = "sum of a + b " + c
+        const firstname = "md"
+        const lastname = "abdullah"
+        const fullname = firstname + " " + lastname
+        document.getElementById("demo2").innerHTML = "full name " + fullname
+        let isstudent = true
+        document.getElementById("demo3").innerHTML = "is student " + isstudent
+        const person = { firstname: "md", lastname: "abdullah", age: 20 }
+        document.getElementById("demo4").innerHTML = "person " + person.firstname + " " + person.lastname + " age " + person.age
+        let fruits = ["apple", "banana", "mango"]
+        document.getElementById("demo5").innerHTML = "fruits " + fruits.join(" , ")
+        let x
+        document.getElementById("demo6").innerHTML = "undefined variable x " + x
+        let y = null
+        document.getElementById("demo7").innerHTML = "null variable y " + y
+        var city = "patna"
+        let state = "bihar"
+        const country = "india"
+        document.getElementById("demo8").innerHTML = "location " + city + " , " + state + " , " + country
+    </script>
+</body>
+
+</html>

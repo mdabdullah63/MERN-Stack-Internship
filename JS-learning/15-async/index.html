@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asyncronos in javaScript</title>
+</head>
+
+<body>
+    <div class="main">
+        hello Asysnc
+    </div>
+    <h1>hello</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+        <div id="insert" style="border: 1px solid black;margin-top:20px;">Press any key to see magic</div>
+
+    <script>
+        // const sayhello = function () {
+        //     console.log("hello abdullah")
+        // }
+        // const changeme =setTimeout(sayhello, 2000)
+        // const addText = function () {
+        //     document.querySelector("h1").innerHTML = "hello abdullah";
+        // }
+        // document.getElementById("stop").addEventListener('click',function () {
+        //     clearTimeout(changeme);
+        //     console.log("STOPED");
+        // }, false)
+        // setTimeout(addText, 2000);
+        let reset;
+        document.getElementById("start").addEventListener('click', function () {
+            reset = setInterval(function () {
+                console.log("Hello Abdullah", Date.now());
+            }, 1000);
+        }, false);
+        document.getElementById("stop").addEventListener('click', function () {
+            clearInterval(reset);
+            console.log("Stoped conitnuosly printing");
+        }, false);
+
+
+        const randomcolor = function () {
+            const hex = "1234567890ABCDEF";
+            let color = "#";
+            for (let i = 0; i < 6; i++) {
+                color += (Math.floor(Math.random() * 16));
+            }
+            return color;
+        }
+        let bgcolor;
+        document.getElementById("start").addEventListener('click', function () {
+            bgcolor = setInterval(function () {
+                document.body.style.backgroundColor = randomcolor();
+            }, 100);
+        }, false);
+        document.getElementById("stop").addEventListener('click', function () {
+            clearInterval(bgcolor);
+            console.log("Stoped changing backgroun color");
+
+        }, false);
+        const insert=document.getElementById("insert");
+        window.addEventListener("keydown", (e) => {
+            insert.innerHTML = `
+            <table>
+  <div class="color" ><tr>
+    <th>Key</th>
+    <th>Keycode</th>
+    <th>Code</th>
+  </tr>
+  <tr>
+    <td>${e.key===" " ?"space":e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+</table>
+</div>
+            `
+        })
+
+
+
+    </script>
+</body>
+
+</html>

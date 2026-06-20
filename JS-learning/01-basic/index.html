@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java-script-basic</title>
+    <script>
+        function myfun() {
+            document.getElementById('xyz').innerHTML = "hello";
+        }
+    </script>
+</head>
+
+<body>
+    <!-- <button type="button" onclick="document.getElementById('abc').innerHTML='hello'">click here</button> -->
+    <!-- <button type="button" onclick='document.getElementById("abc").innerHTML="hello js"'>click here</button> -->
+    <button type="button" onclick="document.getElementById('abc').innerHTML=Date()">click me to show date</botton>
+        <p id="abc"></p>
+        <button type="button" onclick="document.getElementById('myimg').src='../assets/pic_bulbon.gif'">turn on</button>
+        <img src="../assets/pic_bulboff.gif" alt="bulb" id="myimg" style="width:100px;">
+        <button type="button" onclick="document.getElementById('myimg').src='../assets/pic_bulboff.gif'">turn
+            off</button>
+        <button type="button" id="xyz" onclick="myfun()">hey</button>
+        <script>document.write(5 + 4)</script>
+        <hr>
+        <button type="button" onclick="document.write(4+9)"> try it</button>
+        <button type="button" onclick="window.alert(5+5)">hello</button>
+        <button type="button" onclick="alert(8+8)">try this</button>
+        <hr>
+        <button type="button" onclick="otherfun()">hey try it</button>
+        <p id="aaa"></p>
+        <p id="bbb"></p>
+        <script>
+            function otherfun() {
+                document.getElementById('aaa').innerHTML="hey dolly";
+                document.getElementById('bbb').innerHTML="how are you";
+
+            }
+        </script>
+</body>
+
+</html>

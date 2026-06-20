@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event concept</title>
+</head>
+
+<body>
+    <h2>Amazing Images</h2>
+
+    <div>
+        <ul id="images">
+            <li>
+                <img width="200px" height="200px" id="photoshop"
+                    src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt="photoshop" />
+            </li>
+            <li>
+                <img width="200px" height="200px" id="japan"
+                    src="https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_hybrid&w=740&q=80"
+                    alt="" />
+            </li>
+            <li>
+                <img width="200px" height="200px" id="river"
+                    src="https://img.freepik.com/free-photo/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.jpg?semt=ais_hybrid&w=740&q=80"
+                    alt="" />
+            </li>
+            <li>
+                <img width="200px" height="200px id=" owl"
+                    src="https://static.vecteezy.com/system/resources/thumbnails/057/068/323/small/single-fresh-red-strawberry-on-table-green-background-food-fruit-sweet-macro-juicy-plant-image-photo.jpg"
+                    alt="" />
+            </li>
+            <li>
+                <img width="200px" height="200px" id="owl"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmxbhQpDEuFsnVwrYGw3432VO3RCI_hVo71A&s"
+                    alt="" />
+            </li>
+
+        </ul>
+    </div>
+    <div id="youtube"><a href="https://www.youtube.com/watch?v=_ALUMTa8BAE"> visit youtube</a></div>
+    <script>
+        document.getElementById("images").addEventListener
+            ("click", function (e) {
+                console.log("click at the image");
+            }, false)// bubble event buttom to top move
+        document.getElementById("owl").addEventListener
+            ("click", function (e) {
+
+                console.log("click at the image of owl");
+                e.stopPropagation();// stop the other bubble 
+            }, false);
+        document.getElementById("youtube").addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log("click to youtbe")
+        }, false);
+
+        document.getElementById("images").addEventListener
+            ('click', function (e) {
+                console.log(e);
+                console.log(e.target);
+                console.log(e.target.tagName);
+                console.log(e.target.parentNode);
+                if (e.target.tagName == "IMG") {
+                    console.log(e.target.id);
+                    let removeit = e.target.parentNode;
+                    removeit.remove();
+                }
+
+            }, false)
+    </script>
+</body>
+
+</html>

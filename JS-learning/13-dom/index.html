@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom concepts</title>
+</head>
+
+<body>
+
+    <h1 id="demo1" style="color: aqua;">
+        Lorem ipsum dolor sit amet consectetur
+        <span style="display: none;">this is sapin</span>
+        adipisicing elit.
+    </h1>
+
+    <h1 id="demo2" style="color: rgb(51, 10, 199);">
+        Lorem ipsum dolor sit amet consectetur
+        <span style="display: none;">this is sapin</span>
+        adipisicing elit.
+    </h1>
+
+    <h1 id="demo" style="color: rgb(209, 26, 112);">
+        Lorem ipsum dolor sit amet consectetur
+        <span style="display: none;">this is sapin</span>
+        adipisicing elit.
+    </h1>
+
+    <h2>first</h2>
+    <h2>second</h2>
+    <h2>third</h2>
+    <h2>fourth</h2>
+
+    <p id="para">hello <b>world</b></p>
+
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+
+    <script>
+        const dayget = document.querySelector(".day");
+        // console.log(dayget);
+        // console.log(dayget.nextElementSibling);
+        console.log("Nodes", dayget.childNodes);
+        // console.log(dayget.parentElement);
+
+        // const parent = document.querySelector(".parent");
+        // console.log(parent);
+        // console.log(parent.children);
+
+        // console.log(parent.firstElementChild);
+        // console.log(parent.lastElementChild);
+
+        // for (let x = 0; x < parent.children.length; x++) {
+        //     console.log(parent.children[x].innerHTML);
+        // }
+
+        // const heading = document.querySelectorAll("h2");
+        // console.log(heading.length);
+
+        // heading[0].style.color = "cyan";
+
+        // heading.forEach(function (f) {
+        //     f.style.backgroundColor = "blue";
+        //     console.log(f);
+        // });
+
+        // console.log(document.getElementById("demo1").innerText);
+        // console.log(document.getElementById("demo2").innerHTML);
+        // console.log(document.getElementById("demo").textContent);
+    </script>
+
+</body>
+
+</html>

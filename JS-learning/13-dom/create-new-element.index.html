@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new element</title>
+</head>
+<body>
+    <ul class="language">
+        <li>Java Script</li>
+    </ul>
+      
+<script>
+    
+function addlanguage(language1){
+    const li=document.createElement("li");
+    // li.innerHTML=`${language1}`
+    li.textContent=language1;
+    document.querySelector('.language').appendChild(li)
+
+}
+addlanguage("python from add fuunction");
+function addlanguage2(language1){
+    const li=document.createElement("li");
+    li.appendChild(document.createTextNode(language1));
+    document.querySelector('.language').appendChild(li);
+
+}
+addlanguage2("go language from creaTextNode");
+// replace
+const editsec =document.querySelector("li:nth-child(1)");
+// editsec.innerHTML="rubby";
+const replacehere= document.createElement("li");
+replacehere.textContent="Rubby";
+editsec.replaceWith(replacehere);
+// edit
+
+const lastname=document.querySelector("li:last-child")
+// lastname.outerHTML="<li>cpp</li>";
+lastname.textContent="cpp";
+// remove
+const remo=document.querySelector("li:first-child")
+remo.remove();
+</script>
+
+
+     <script>
+        const div=document.createElement("div")
+        console.log(div)
+        div.className="main";
+        div.id=Math.round(Math.random()*10+1);
+        div.setAttribute("title","gen tittle") ;
+        // div.innerText="hello dom";//also we can do
+        const addtxt=document.createTextNode("Hello div");
+        div.append(addtxt);
+        document.body.appendChild(div)
+    </script>
+</body>
+</html>
