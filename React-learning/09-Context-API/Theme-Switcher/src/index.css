@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@layer utilities {
+  .dark {
+	color-scheme: dark;
+  }
+}
