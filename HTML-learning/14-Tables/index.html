@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table Concepts</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: green;
+            color: white;
+        }
+
+        caption {
+            font-weight: blue;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        tfoot td {
+            background-color: lightcyan;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Html table</h1>
+
+    <!-- <table> → Main container for all rows and cells -->
+    <table cellspacing="5" cellpadding="10">
+
+        <!-- <caption> → Table title shown above table -->
+        <caption>Student Results 2026</caption>
+
+        <!-- <colgroup> → Group columns for styling -->
+        <colgroup>
+            <col span="1" style="background-color: lightgreen; width: 20%;"> <!-- First column green -->
+            <col span="2"> <!-- Next two columns normal -->
+            <col span="1" style="background-color: lightgray"> <!-- Last column light gray -->
+        </colgroup>
+
+        <!-- <thead> → Header section with column titles -->
+        <thead>
+            <tr> <!-- <tr> → One row -->
+                <th>ID</th> <!-- <th> → Header cell (bold + centered) -->
+                <th>Name</th>
+                <th>Course</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+
+        <!--  Main data rows section -->
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Abdullah</td>
+                <td>HTML/CSS</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Sahil</td>
+                <td>JavaScript</td>
+                <td>92</td>
+            </tr>
+            <tr>
+                <td rowspan="2">003</td> <!-- rowspan  Merge vertically 2 rows -->
+                <td>xyz</td>
+                <td>React</td>
+                <td>87</td>
+            </tr>
+            <tr> <!-- merged with above using rowspan -->
+                <td>abc</td>
+                <td>React</td>
+                <td>90</td>
+            </tr>
+        </tbody>
+
+        <!-- Footer section for totals / summary -->
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Students</td> <!-- colspan → Merge 3 columns -->
+                <td>4</td>
+            </tr>
+            <tr>
+                <td colspan="3">Average Marks</td>
+                <td>91.75</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    <table border="2" cellspacing="5" cellpadding="8" style="width:70%; margin:20px auto;">
+        <caption>Table xyz</caption>
+        <!-- Table title -->
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Alok</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Mohan</td>
+                <td>89</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

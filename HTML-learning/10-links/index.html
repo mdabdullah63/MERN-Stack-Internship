@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Links and Bookmarks</title>
+
+    <style>
+        a:link {
+            color: green;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: pink;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            text-decoration: underline;
+        }
+
+        .button-link:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Link Target Attribute</h1>
+
+    <!-- _self opens in the same tab (default) -->
+    <p><a href="https://www.chartgpt.com" target="_self">Open chartgpt in same tab (_self)</a></p>
+
+    <!-- _blank opens in a new tab -->
+    <p><a href="https://www.w3schools.com" target="_blank">Open W3Schools in new tab (_blank)</a></p>
+
+    <!-- _parent opens in the parent frame (if using frames) -->
+    <p><a href="https://www.instagram.com" target="_parent">Open Instagram in parent frame (_parent)</a></p>
+
+    <!-- _top opens in the full body of the window -->
+    <p><a href="https://facebook.com" target="_top">Open Facebook in full window (_top)</a></p>
+
+
+    <!-- normal link -->
+    <p><a href="https://www.linkedin.com" target="_blank">Go to LinkedIn</a></p>
+
+    <!-- image link -->
+    <p>
+        <a href="https://www.google.com" target="_blank">
+            <img src="https://www.google.com/search?vsrid=CL2OsZDg_u-onwEQAhgBIiRlYWE4ZjMyNS02ZWIzLTRhNDktYTJlYS0yNzRiNmRlMjU1ODIyeyICdGEoLUJzCi5sZmUtZHVtbXk6ZmFjOTliMmQtNGU5OC00M2NlLWExOGMtNTc5OTA1OWI3MTg2EkEKPy9ibnMvdGEvYm9yZy90YS9ibnMvbGVucy1mcm9udGVuZC1hcGkvcHJvZC5sZW5zLWZyb250ZW5kLWFwaS81NDjazKCX0pmTAw&vsint=CAIqDAoCCAcSAggKGAEgATojChYNAAAAPxUAAAA_HQAAgD8lAACAPzABELACGKYBJQAAgD8&udm=26&lns_mode=un&source=lns.web.gisivli&vsdim=304,166&gsessionid=3m7pEpbLEMl7NBsPZoXeLDbi5VBCF59x7qWqOL_SbwCBYimozfZ9Fg&lsessionid=FlQcQ1rj8AZLEj10nJH-Yr_nRiKfSc4ypih3cPjl3n6c5U3X22tiWA&lns_surface=19&authuser=0&lns_vfs=e&qsubts=1773293797436&biw=638&bih=584&ved=0CBgQh6cGahcKEwiwkv6F0pmTAxUAAAAAHQAAAAAQIg&tbnid=Ph7yyZL0izvUGM&ictx=2" alt=" fruitimage">
+        </a>
+    </p>
+
+    <!-- email link -->
+    <p><a href="mailto:mdabdullarah67@email.com">Send Email</a></p>
+
+    <!-- link button -->
+    <p>
+        <a href="https://www.youtube.com" class="button-link" target="_blank">Go to YouTube</a>
+    </p>
+
+    <!-- link to bookmarks -->
+
+<p><a href="#C4">Jump to Chapter 4</a></p>
+<p><a href="#C5">Jump to Chapter 5</a></p>
+
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C4">Chapter 4</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C5">Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+
+</body>
+
+</html>

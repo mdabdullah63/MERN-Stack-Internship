@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>iframe and javascript</title>
+</head>
+
+<body>
+
+    <h1>iframe examples</h1>
+
+    <!-- simple iframe -->
+    <iframe src="https://www.example.com" title="example iframe"></iframe>
+    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <!-- iframe with height and width -->
+    <iframe src="https://www.example.com" height="200" width="300" title="iframe example"></iframe>
+    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <!-- iframe with border removed -->
+    <iframe src="https://www.example.com" style="border:none;" title="iframe example"></iframe>
+    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <!-- iframe with colored border -->
+    <iframe src="https://www.example.com" style="border:2px solid red;" title="iframe example"></iframe>
+    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <!-- iframe as target for a link -->
+    <iframe src="https://www.example.com" name="iframe_a" title="iframe example"></iframe>
+    <p><a href="https://www.w3schools.com" target="iframe_a">w3schools.com</a></p>
+
+    <hr>
+
+    <h1>javascript examples</h1>
+
+    <!-- javascript to change content -->
+    <p id="demo">lorem ipsum dolor sit amet.</p>
+    <button onclick="showMessage()">click me</button>
+
+    <script>
+        function showMessage() {
+            document.getElementById("demo").innerHTML = "hello javascript!";
+        }
+    </script>
+
+    <!-- javascript to change styles -->
+    <p id="styleDemo">lorem ipsum dolor sit amet.</p>
+    <button onclick="changeStyle()">change style</button>
+
+    <script>
+        function changeStyle() {
+            var elem = document.getElementById("styleDemo");
+            elem.style.fontSize = "25px";
+            elem.style.color = "red";
+            elem.style.backgroundColor = "yellow";
+        }
+    </script>
+
+    <!-- javascript to change attributes -->
+    <img id="myImage" src="https://via.placeholder.com/150" alt="placeholder image">
+    <br>
+    <button onclick="changeImage()">change image</button>
+
+    <script>
+        function changeImage() {
+            document.getElementById("myImage").src = "https://via.placeholder.com/200";
+        }
+    </script>
+
+    <!-- noscript tag example -->
+    <noscript>sorry, your browser does not support javascript!</noscript>
+
+</body>
+
+</html>

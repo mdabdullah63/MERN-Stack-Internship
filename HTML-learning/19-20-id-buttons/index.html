@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>id and button examples</title>
+</head>
+
+<body>
+
+    <h1 id="myheader">my header</h1> <!-- unique header using id -->
+
+    <!-- multiple elements using same class -->
+    <h2 class="city">london</h2>
+    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <h2 class="city">paris</h2>
+    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <h2 class="city">tokyo</h2>
+    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <!-- html bookmark example -->
+    <h2 id="chapter4">chapter 4</h2>
+    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <!-- link to bookmark on same page -->
+    <a href="#chapter4">jump to chapter 4</a>
+    <br>
+    <!-- link to bookmark from another page -->
+    <a href="html_demo.html#chapter4">jump to chapter 4 from another page</a>
+
+    <!-- javascript example using id -->
+    <button onclick="displayResult()">change header text</button>
+    <script>
+        function displayResult() {
+            document.getElementById("myheader").innerHTML = "have a nice day!";
+        }
+    </script>
+
+    <!-- simple html buttons -->
+    <h2>html buttons</h2>
+    <button type="button">normal button</button>
+    <button type="submit">submit</button>
+    <button type="reset">reset</button>
+
+    <!-- disabled button -->
+    <button disabled>disabled button</button>
+
+    <!-- button with javascript alert -->
+    <button onclick="alert('hello!')">click me</button>
+
+    <!-- form with submit and reset buttons -->
+    <form action="/action_page.php">
+        first name: <input type="text" name="fname">
+        <button type="submit">submit</button>
+        <button type="reset">reset form</button>
+    </form>
+
+</body>
+
+</html>

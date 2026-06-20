@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>html file path examples</title>
+</head>
+
+<body>
+
+    <h1>html file paths</h1>
+
+    <p>a file path describes the location of a file in a website's folder structure.</p>
+
+    <h2>file path examples</h2>
+
+    <!-- file in same folder -->
+    <p>picture in the same folder:</p>
+    <img src="picture.jpg" alt="lorem ipsum">
+
+    <!-- file in a subfolder -->
+    <p>picture in the "images" folder inside current folder:</p>
+    <img src="images/picture.jpg" alt="lorem ipsum">
+
+    <!-- file in root folder -->
+    <p>picture in the "images" folder at the root of website:</p>
+    <img src="/images/picture.jpg" alt="lorem ipsum">
+
+    <!-- file one level up -->
+    <p>picture in a folder one level up:</p>
+    <img src="../picture.jpg" alt="lorem ipsum">
+
+    <hr>
+
+    <h2>absolute file path</h2>
+    <p>an absolute path is the full url to a file:</p>
+    <img src="https://www.w3schools.com/images/picture.jpg" alt="lorem ipsum">
+
+    <h2>relative file paths</h2>
+    <p>a relative path points to a file relative to the current page:</p>
+
+    <!-- relative to root -->
+    <img src="/images/picture.jpg" alt="lorem ipsum">
+
+    <!-- relative to current folder -->
+    <img src="images/picture.jpg" alt="lorem ipsum">
+
+    <!-- relative to folder one level up -->
+    <img src="../images/picture.jpg" alt="lorem ipsum">
+
+    <h2>best practice</h2>
+    <p>it is best to use relative file paths whenever possible. this keeps your links working on your own computer
+        without being tied to a specific base url.</p>
+
+</body>
+
+</html>

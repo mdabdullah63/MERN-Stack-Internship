@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media concept</title>
+</head>
+
+<body>
+    <!-- VIDEO IN HTML -->
+    <h1>Video in HTML</h1>
+    <p>The video tag is used to show a video on a web page.</p>
+
+    <!-- video player -->
+     <!-- here is catch to paly video auto if the audio is mute than the auto play are works
+      otherwise browser is block the request
+      -->
+    <video width="400" height="300" controls autoplay muted loop>
+        <!-- video file -->
+        <source src="../assets/video.mp4" type="video/mp4">
+        <!-- message if browser does not support video -->
+        Your browser does not support the video tag.
+    </video>
+
+
+    <!-- AUDIO IN HTML -->
+    <h1>Audio in HTML</h1>
+    <p>The audio tag is used to play sound on a web page.</p>
+
+    <!-- audio player -->
+    <audio controls>
+        <!-- audio file -->
+        <source src="../assets/audio.mp3" type="audio/mpeg">
+        <!-- message if browser does not support audio -->
+        Your browser does not support the audio element.
+    </audio>
+
+
+    <!-- YOUTUBE VIDEO IN HTML -->
+    <h1>YouTube Video in HTML</h1>
+    <p>We can embed a YouTube video using the iframe tag.</p>
+
+    <!-- youtube video -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/oRDRfikj2z8" title="YouTube video"
+        allowfullscreen>
+    </iframe>
+
+</body>
+
+</html>

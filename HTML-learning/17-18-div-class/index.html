@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>div and span examples</title>
+</head>
+
+<body>
+
+    <h1>div and span examples</h1>
+
+    <!-- simple div block -->
+    <div>
+        <h2>london</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </div>
+
+    <!-- multiple divs -->
+    <div>
+        <h2>america</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+    </div>
+
+    <div>
+        <h2>india</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in.</p>
+    </div>
+
+    <!-- center aligned div -->
+    <div class="center-div">
+        lorem ipsum dolor sit amet, this div is center aligned
+    </div>
+
+    <!-- float method -->
+    <h2>float method</h2>
+    <div class="float-container">
+        <div style="background-color: lightcoral;">london</div>
+        <div style="background-color: lightgreen;">america</div>
+        <div style="background-color: lightblue;">india</div>
+    </div>
+
+    <!-- inline-block method -->
+    <h2>inline-block method</h2>
+    <div class="inline-container">
+        <div style="background-color: lightcoral;">london</div>
+        <div style="background-color: lightgreen;">america</div>
+        <div style="background-color: lightblue;">india</div>
+    </div>
+
+    <!-- flex method -->
+    <h2>flex method</h2>
+    <div class="flex-container">
+        <div style="background-color: lightcoral;">london</div>
+        <div style="background-color: lightgreen;">america</div>
+        <div style="background-color: lightblue;">india</div>
+    </div>
+
+    <!-- grid method -->
+    <h2>grid method</h2>
+    <div class="grid-container">
+        <div style="background-color: lightcoral;">london</div>
+        <div style="background-color: lightgreen;">oslo</div>
+        <div style="background-color: lightblue;">rome</div>
+    </div>
+
+    <!-- div with class attribute -->
+    <h2>using class attribute</h2>
+    <div class="city">
+        <h2>london</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="city">
+        <h2>paris</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="city">
+        <h2>tokyo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <!-- span with class -->
+    <h2>span with class</h2>
+    <h1>my <span class="note">important</span> heading</h1>
+    <p>this is some <span class="note">important</span> text.</p>
+
+    <!-- javascript example to hide elements by class -->
+    <button onclick="hideCities()">hide all cities</button>
+    <script>
+        function hideCities() {
+            var cities = document.getElementsByClassName("city"); // select all divs with class "city"
+            for (var i = 0; i < cities.length; i++) {
+                cities[i].style.display = "none"; // hide each div
+            }
+        }
+    </script>
+
+</body>
+
+</html>

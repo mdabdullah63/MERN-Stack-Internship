@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style css</title>
+ <!-- Internal CSS -->
+    <style>
+        body {
+            background-color: powderblue;
+        }
+
+        h1 {
+            color: blue;
+            font-family: verdana;
+            font-size: 300%;
+        }
+
+        p {
+            color: red;
+            font-family: courier;
+            font-size: 160%;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 20px;
+        }
+    </style>
+
+    <!-- External CSS example -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>this is internal CSS </h1>
+
+    <!-- Inline CSS -->
+    <h2 style="color:green; font-family:Arial; font-size:200%;">Inline CSS Example</h2>
+    <p style="color:purple; font-family:Tahoma; font-size:150%; border:2px solid blue; padding:15px; margin:10px;">
+        This paragraph uses inline CSS.
+    </p>
+
+    <!-- Colors -->
+    <p style="color:blue;">Color name: blue</p>
+    <p style="color:rgb(255,0,0);">RGB: red</p>
+    <p style="color:#00FF00;">HEX: green</p>
+    <p style="color:hsl(240,100%,50%);">HSL: blue</p>
+
+    <!-- Font -->
+    <p style="font-family:Georgia; font-size:180%;">Georgia font, bigger text</p>
+
+    <!-- Border, padding, margin -->
+    <p style="border:2px solid red; padding:20px; margin:30px;">
+        Border, padding (inside space), margin (outside space)
+    </p>
+
+</body>
+
+</html>

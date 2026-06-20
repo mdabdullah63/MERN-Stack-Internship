@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple html forms</title>
+</head>
+
+<body>
+
+    <!-- page heading -->
+    <h1>html forms </h1>
+
+    <!-- text inputs -->
+    <h2>text inputs</h2>
+    <form>
+        <!-- single line text -->
+        <label for="firstname">first name:</label>
+        <input type="text" id="firstname" name="firstname" placeholder="enter your first name">
+
+        <label for="lastname">last name:</label>
+        <input type="text" id="lastname" name="lastname" placeholder="enter your last name">
+    </form>
+
+    <!-- password input -->
+    <h2>password input</h2>
+    <form>
+        <label for="user">username:</label>
+        <input type="text" id="user" name="user">
+
+        <label for="password">password:</label>
+        <input type="password" id="password" name="password">
+    </form>
+
+    <!-- radio buttons -->
+    <h2>radio buttons</h2>
+    <form>
+        <!-- only one choice allowed -->
+        <p>choose a language:</p>
+        <input type="radio" id="html" name="language" value="html">
+        <label for="html">html</label>
+
+        <input type="radio" id="css" name="language" value="css">
+        <label for="css">css</label>
+
+        <input type="radio" id="js" name="language" value="javascript">
+        <label for="js">javascript</label>
+    </form>
+
+    <!-- checkboxes -->
+    <h2>checkboxes</h2>
+    <form>
+        <!-- multiple choices allowed -->
+        <p>choose hobbies:</p>
+        <input type="checkbox" id="read" name="hobby" value="reading">
+        <label for="read">reading</label>
+
+        <input type="checkbox" id="game" name="hobby" value="gaming">
+        <label for="game">gaming</label>
+
+        <input type="checkbox" id="travel" name="hobby" value="traveling">
+        <label for="travel">traveling</label>
+    </form>
+
+    <!-- dropdown menu -->
+    <h2>dropdown menu</h2>
+    <form>
+        <label for="car">choose a car:</label>
+        <select id="car" name="car">
+            <option value="bmw">bmw</option>
+            <option value="audi">audi</option>
+            <option value="kia">kia</option>
+            <option value="maruti">maruti</option>
+        </select>
+    </form>
+
+    <!-- textarea -->
+    <h2>message</h2>
+    <form>
+        <label for="msg">your message:</label>
+        <textarea id="msg" name="msg" rows="4" cols="30" placeholder="write something..."></textarea>
+    </form>
+
+    <!-- date, number, range -->
+    <h2>date and numbers</h2>
+    <form>
+        <label for="dob">date of birth:</label>
+        <input type="date" id="dob" name="dob">
+
+        <label for="qty">quantity (1-5):</label>
+        <input type="number" id="qty" name="qty" min="1" max="5">
+
+        <label for="slide">choose a number:</label>
+        <input type="range" id="slide" name="slide" min="0" max="100">
+    </form>
+
+    <!-- autocomplete and pattern -->
+    <h2>country code</h2>
+    <form autocomplete="on">
+        <!-- only 3 letters allowed -->
+        <label for="country">country code:</label>
+        <input type="text" id="country" name="country" pattern="[a-zA-Z]{3}" title="enter 3 letters">
+    </form>
+
+    <!-- buttons -->
+    <h2>buttons</h2>
+    <form>
+        <input type="submit" value="send">
+        <input type="reset" value="clear">
+    </form>
+
+    <!-- fieldset -->
+    <h2>personal info</h2>
+    <form>
+        <fieldset>
+            <legend>info</legend>
+
+            <label for="fname">first name:</label>
+            <input type="text" id="fname" name="fname">
+
+            <label for="lname">last name:</label>
+            <input type="text" id="lname" name="lname">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

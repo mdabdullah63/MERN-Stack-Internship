@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive indian cities</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="header">
+        <h1>responsive web page</h1>
+        <p>lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua</p>
+    </div>
+
+    <!-- three-column layout -->
+    <div class="row">
+        <div class="col">
+            <h2>delhi</h2>
+            <p>lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua</p>
+            <p>lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua</p>
+        </div>
+
+        <div class="col">
+            <h2>mumbai</h2>
+            <p>lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua</p>
+            <p>lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua</p>
+        </div>
+
+        <div class="col">
+            <h2>bangalore</h2>
+            <p>lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua</p>
+            <p>lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua</p>
+        </div>
+    </div>
+
+    <!-- responsive image -->
+    <div class="image">
+        <h2>responsive image</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/India_Map.png" alt="india map"
+            style="max-width:100%; height:auto;">
+    </div>
+
+    <!-- responsive text -->
+    <div class="text">
+        <h2 style="font-size:8vw;">resize the window to see text scale</h2>
+        <p style="font-size:2vw;">lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua</p>
+    </div>
+
+    <!-- simple float layout -->
+    <style>
+        .left,
+        .right {
+            float: left;
+            width: 20%;
+            background-color: lightblue;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .main {
+            float: left;
+            width: 55%;
+            background-color: lightgreen;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        @media screen and (max-width: 800px) {
+
+            .left,
+            .main,
+            .right {
+                width: 100%;
+                float: none;
+            }
+        }
+    </style>
+
+    <div class="layout">
+        <div class="left">lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua</div>
+        <div class="main">lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua</div>
+        <div class="right">lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua</div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <p>lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua</p>
+    </footer>
+
+</body>
+
+</html>

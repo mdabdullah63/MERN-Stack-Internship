@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Easy Image Lessons</title>
+</head>
+<body>
+
+    <h2>1. The Basic Image Tag</h2>
+    
+    <img 
+        src="https://via.placeholder.com/150" alt="A simple gray square"
+    > 
+    <hr>
+    <h2>2. Image Map (Buttons on a Picture)</h2>
+    <p>The left half goes to Google; the circle on the right goes to Wikipedia.</p>
+
+    <img src="https://via.placeholder.com/300x100" alt="Map Example" usemap="#myClickMap">
+
+    <map name="myClickMap">
+        
+        <area shape="rect" coords="0,0,150,100" href="https://www.google.com" alt="Google">
+        
+        <area shape="circle" coords="225,50,40" href="https://www.wikipedia.org" alt="Wikipedia">
+        
+    </map>
+
+    <hr>
+
+    <h2>3. The Responsive Picture</h2>
+    <p>Resize your browser window to see the color change!</p>
+
+    <picture>
+        
+        <source media="(max-width: 600px)" srcset="https://via.placeholder.com/150/FF0000?text=Mobile+View">
+        
+        <source media="(min-width: 601px)" srcset="https://via.placeholder.com/400/0000FF?text=Desktop+View">
+
+        <img src="https://via.placeholder.com/200" alt="Backup Image">
+        
+    </picture>
+
+</body>
+</html>
