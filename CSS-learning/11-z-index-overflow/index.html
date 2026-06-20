@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index overflow</title>
+
+    <style>
+        img {
+            position: absolute;
+            width: 100%;
+            /* z-index controls the stack order of elements */
+            z-index: -1;
+
+            object-fit: contain;
+        }
+
+        #text {
+            padding-left: 5px;
+            background-color: lightgray;
+            width: 200px;
+            height: 105px;
+            border: 2px solid black;
+
+            /* overflow defines what happens when content exceeds width or height */
+
+            overflow-x: hidden;
+            /* hides content that exceeds the element width */
+
+            overflow-y: scroll;
+            /* adds vertical scrollbar if content exceeds height */
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="../assets/img.jpeg" alt="image">
+
+    <h1>heading</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis repellendus
+        eum ad laudantium deserunt voluptatibus repudiandae optio adipisci.
+    </p>
+
+    <p id="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cum totam maxime explicabo
+        aperiam officia sapiente saepe eos sunt? Doloribus, facilis rem aperiam numquam magnam
+        voluptatem minima provident molestias doloremque!
+    </p>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>margin and padding concept</title>
+
+<style>
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin:20px;
+}
+
+div{
+    border:1px solid black;
+
+    margin:25px 50px 75px 100px;
+    /* this div has top margin 25px, right 50px, bottom 75px and left 100px */
+
+    background-color:lightblue;
+
+    max-width:800px;
+}
+
+p{
+    margin-left:inherit;
+    /* it means the margin will be same as the parent element */
+
+    max-width:800px;
+}
+
+h1{
+    margin-bottom:50px;
+}
+
+h2{
+    margin-top:20px;
+}
+
+#pading{
+    border:1px solid black;
+    background-color:lightblue;
+    padding-top:50px;
+    padding-right:30px;
+    padding-bottom:50px;
+    padding-left:80px;
+    max-width:800px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Margin Collapse</h1>
+
+<!-- margin collapse happens only in top and bottom margins -->
+
+<h2>heading</h2>
+
+<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quae aut, obcaecati nisi est eveniet facere, saepe fuga sit ut temporibus provident architecto reiciendis neque qui? Dolorem, quia optio itaque doloribus nihil pariatur obcaecati ducimus, debitis, libero eius voluptates. Dolores sit, reprehenderit nihil laborum corporis consectetur quas illo harum hic.
+</div>
+
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi commodi dignissimos libero velit natus iusto minima accusantium nemo est tempora, incidunt quibusdam nobis delectus exercitationem perferendis quidem animi, aliquid vitae eum quasi ullam. Ex nihil dolores provident>`</p>
+
+<p id="pading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, voluptatem qui asperiores quidem ratione similique quaerat illo inventore, amet beatae accusantium alias. Voluptatem neque ipsam commodi qui distinctio molestiae nam, quae quaerat dignissimos libero est saepe minima dolor cumque corporis explicabo architecto quidem iure obcaecati deleniti ipsa? Delectus, eligendi quaerat.</p>
+
+</body>
+
+</html>

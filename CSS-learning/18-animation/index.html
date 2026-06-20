@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation concepts</title>
+    <style>
+        .box {
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation-name: move;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes move {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: green;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: blue;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
+            position: relative;
+            margin: 10px;
+            animation-name: abc;
+            animation-duration: 4s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: 2;
+        
+        }
+
+        div[one] {
+            animation-timing-function: linear;
+        }
+
+        div[two] {
+            animation-timing-function: ease;
+        }
+
+        div[three] {
+            animation-timing-function: ease-in;
+        }
+
+        div:nth-child(5) {
+            animation-timing-function: ease-out;
+        }
+        @keyframes abc{
+            0%{
+                left: 0px;
+            }
+            100%{
+                left: 300px;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- @keyframes is a CSS rule that defines how an element should change styles over time to create an animation. -->
+    <div class="box"></div>
+    <div one>one</div>
+    <div two>two</div>
+    <div three>three</div>
+    <div four>four</div>
+</body>
+
+</html>

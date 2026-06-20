@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icon link list</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            margin-top: 40px;
+            margin-left: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* link states */
+        a:link {
+            color: black;
+        }
+
+        a:visited {
+            color: blue;
+        }
+
+        a:hover {
+            color: black;
+            background-color: lightcyan;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        a.nav-link {
+            color: orange;
+            cursor: pointer;
+        }
+
+        ul.unorder {
+            /* list-style: square;
+            list-style: circle; */
+            list-style: disc;
+        }
+
+        ol.order {
+            list-style: upper-roman;
+            list-style-position: inside;
+            background-color: lightcoral;
+        }
+
+        ol.order1 {
+            list-style-position: outside;
+            list-style: upper-latin;
+            /* list-style: upper-alpha; */
+        }
+
+        /* icon spacing */
+        i,
+        .material-icons {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        /*it has negative value but the text spacing have no negative value*/
+    </style>
+
+</head>
+
+<body>
+
+    <ul class="unorder">
+        <li>hello1</li>
+        <li>hello2</li>
+        <li>hello3</li>
+    </ul>
+
+    <ol class="order">
+        <li>orderlist1</li>
+        <li>orderlist2</li>
+        <li>orderlist3</li>
+    </ol>
+
+    <ol class="order1">
+        <li>orderlist1</li>
+        <li>orderlist2</li>
+        <li>orderlist3</li>
+    </ol>
+
+    <h2>these are icon</h2>
+    <br>
+
+    <a href="#about">this is link</a>
+    <a class="nav-link" href="#about">this is another link</a>
+
+    <br><br>
+
+    <!-- bootstrap button -->
+    <button class="btn btn-primary">bootstrap button</button>
+
+    <br><br>
+
+    <!-- Font awesome icons -->
+    <h3>Font awesome icons</h3>
+    <i class="fa-solid fa-cloud"></i>
+    <i class="fa-solid fa-heart"></i>
+    <i class="fa-solid fa-user"></i>
+
+    <br><br>
+
+    <!-- Google icons -->
+    <h3>Google Icons</h3>
+    <span class="material-icons">cloud</span>
+    <span class="material-icons">favorite</span>
+    <span class="material-icons">person</span>
+
+</body>
+
+</html>

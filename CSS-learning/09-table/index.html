@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table concept</title>
+
+    <style>
+        /* table border */
+        table, th, td {
+            border: 1px solid black;
+            /* backgrund attachment is used to control the scroll */
+            background-attachment: fixed;
+        }
+
+        table {
+            border-collapse: separate;
+            width: 50%;
+            margin: 0 auto;
+            border-spacing: 2px;
+
+            outline-color: black;
+            /* offset is the distance between the border and the outline */
+            outline-offset: 2px;
+            outline-style: dashed;
+        }
+
+        th {
+            background-color: red;
+            padding: 8px;
+        }
+
+        tr:hover {
+            background-color: lightgreen;
+        }
+
+        td {
+            vertical-align: middle;
+            text-align: center;
+            padding: 8px;
+        }
+
+        /* this is zebra striping */
+        /* tr:nth-child(even) {
+            background-color: lightcyan;
+        }
+
+        tr:nth-child(odd) {
+            background-color: lightsteelblue;
+        } */
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        div.container {
+            overflow-x: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Table Concept</h1>
+
+        <table>
+            <caption>Company Information</caption>
+
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+
+            <tr>
+                <td>Berglunds snabbköp</td>
+                <td>Christina Berglund</td>
+                <td>Sweden</td>
+            </tr>
+
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+
+            <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+            </tr>
+
+            <tr>
+                <td>Königlich Essen</td>
+                <td>Philip Cramer</td>
+                <td>Germany</td>
+            </tr>
+
+            <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+            </tr>
+
+            <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+            </tr>
+
+            <tr>
+                <td>North/South</td>
+                <td>Simon Crowther</td>
+                <td>UK</td>
+            </tr>
+
+            <tr>
+                <td>Paris spécialités</td>
+                <td>Marie Bertrand</td>
+                <td>France</td>
+            </tr>
+
+        </table>
+    </div>
+
+</body>
+
+</html>

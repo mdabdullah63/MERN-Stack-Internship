@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position in css</title>
+
+    <style>
+        /* page style */
+        body {
+            height: 1500px;
+            /* added so we can scroll and see the fixed position */
+        }
+
+        .box {
+            width: 260px;
+            padding: 12px;
+            border: 2px solid black;
+            margin: 20px;
+        }
+
+        /* sticky position */
+        .class1 {
+            position: sticky;
+            top: 20px;
+            background-color: lightcyan;
+        }
+
+        /* relative position */
+        .class2 {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: lightsteelblue;
+        }
+
+        /* absolute position */
+        .class3 {
+            position: absolute;
+            top: 140px;
+            left: 360px;
+            background-color: lightgreen;
+        }
+
+        /* fixed position */
+        .class4 {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: lightpink;
+        }
+
+        /* image style */
+        img {
+            width: 100%;
+            height: 120px;
+            /* it is used to resize the image in box without distorting the aspect ratio */
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--
+    static – Default position; element stays in normal page flow.
+    relative – Moves relative to its original position.
+    absolute – Positioned relative to the nearest positioned parent.
+    fixed – Fixed to the browser window and does not move when scrolling.
+    sticky – Acts like relative, but sticks to a position when scrolling reaches it.
+    inherit – Inherits the position value from its parent element.
+    -->
+
+    <h1>CSS Position Example</h1>
+
+    <div class="box class1">
+        <h3>Static Position</h3>
+        <img src="../assets/img.jpeg" alt="image">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique inventore aliquid
+            voluptates vero dolores recusandae earum error blanditiis natus.
+        </p>
+    </div>
+
+    <div class="box class2">
+        <h3>Relative Position</h3>
+        <img src="../assets/img.jpeg" alt="image">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis repellendus
+            eum ad laudantium deserunt voluptatibus repudiandae optio adipisci.
+        </p>
+    </div>
+
+    <div class="box class3">
+        <h3>Absolute Position</h3>
+        <img src="../assets/img.jpeg" alt="image">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur accusamus
+            ratione molestiae distinctio pariatur deleniti.
+        </p>
+    </div>
+
+    <div class="box class4">
+        <h3>Fixed Position</h3>
+        <img src="../assets/img.jpeg" alt="image">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo tempora libero
+            doloremque omnis reprehenderit cumque.
+        </p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <style>
+        .loginpannel {
+            background-image: url("../assets/img.jpeg");
+            background-size: cover;
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            border-radius: 6px;
+
+        }
+
+        label {
+            margin-bottom: 8px;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid rgb(228, 239, 230);
+            border-radius: 4px;
+        }
+
+        textarea {
+            padding: 8px;
+            border: 1px solid rgb(76, 107, 82);
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        #message {
+            margin-top: 12px;
+            height: 100px;
+            size-adjust:cover;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus,
+        textarea:focus {
+            color: black;
+            outline: none;
+            border-color: aqua;
+            background-color: lightcyan;
+        }
+
+        button {
+            padding: 10px;
+            background-color: rgb(238, 53, 53);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(67, 9, 214);
+        }
+
+        /* button[target="_blank"]{
+                    background-color: lightcyan;
+                    color: black;
+                } */
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <div class="loginpannel">
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+
+            <button type="submit">Login</button>
+            <textarea name="message" id="message" placeholder="Enter your message"></textarea>
+
+
+        </div>
+    </form>
+
+</body>
+
+</html>

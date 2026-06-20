@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation</title>
+
+    <style>
+        .main {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 260px;
+            padding: 12px;
+            border: 2px solid black;
+            margin: 20px;
+        }
+
+        .class1 {
+            transform: rotate(15deg);
+            background-color: lightcyan;
+        }
+
+        .class2 {
+            transform: scale(1.2);
+            background-color: lightsteelblue;
+        }
+
+        .class3 {
+            transform: translate(50px, 50px);
+            background-color: lightgreen;
+        }
+
+        img {
+            width: 100%;
+            height: 120px;
+            object-fit: contain;
+        }
+
+        .tr2 {
+            margin-top: 50px;
+            background-color: cyan;
+            text-align: center;
+        }
+
+        .class21 {
+            background-color: cyan;
+            transform: rotateY(-15deg);
+        }
+
+        .class22 {
+            background-color: lightsteelblue;
+            transform: scaleY(1.2);
+        }
+
+        .class23 {
+            background-color: lightgreen;
+            transform: translateY(50px);
+        }
+
+        /* combined 2D transform example */
+        .class2s {
+            background-color: lightpink;
+            transform: rotate(20deg) scale(1.1) translate(20px, 20px);
+        }
+
+        .tr3 {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background-color: cyan;
+            text-align: center;
+        }
+
+        .class31 {
+            background-color: cyan;
+            transform: rotateZ(45deg);
+        }
+
+        .class32 {
+            background-color: lightsteelblue;
+            transform: scale3d(1.2, 1.2, 1);
+        }
+
+        .class33 {
+            background-color: lightgreen;
+            transform: translate3d(50px, -50px, 20px);
+        }
+
+        /* combined 3D transform example */
+        .class3s {
+            background-color: lightcoral;
+            transform: rotateX(30deg) rotateY(20deg) scale3d(1.1, 1.1, 1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="box class1">
+            <h3>Transform rotate</h3>
+            <img src="../assets/img.jpeg" alt="image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="box class2">
+            <h3>Transform scale</h3>
+            <img src="../assets/img.jpeg" alt="image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="box class3">
+            <h3>Transform translate</h3>
+            <img src="../assets/img.jpeg" alt="image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+    </div>
+
+    <h1 class="tr2">2D transform start here</h1>
+
+    <div class="main">
+
+        <div class="box class21">
+            <h3>RotateY</h3>
+            <img src="../assets/img.jpeg" alt="image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="box class22">
+            <h3>ScaleY</h3>
+            <img src="../assets/img.jpeg" alt="image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="box class23">
+            <h3>TranslateY</h3>
+            <img src="../assets/img.jpeg" alt="image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="box class2s">
+            <h3>Combined Transform</h3>
+            <img src="../assets/img.jpeg" alt="image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+    </div>
+
+    <h1 class="tr3">3D transform start here</h1>
+
+    <div class="main">
+
+        <div class="box class31">
+            <h3>RotateZ</h3>
+            <img src="../assets/img.jpeg" alt="image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="box class32">
+            <h3>Scale3D</h3>
+            <img src="../assets/img.jpeg" alt="image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="box class33">
+            <h3>Translate3D</h3>
+            <img src="../assets/img.jpeg" alt="image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="box class3s">
+            <h3>Combined 3D</h3>
+            <img src="../assets/img.jpeg" alt="image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

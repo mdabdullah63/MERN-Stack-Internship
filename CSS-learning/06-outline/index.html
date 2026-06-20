@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outline concept</title>
+    <style>
+        .box {
+            padding: 15px;
+            margin: 25px;
+            border: 1px solid lightgreen;
+            outline-width: 3px;
+        }
+
+        .solid {
+            outline-style: solid;
+            outline-color: #04AA6D;
+            /* outline-style and outline-color */
+        }
+
+        .dashed {
+            outline: 3px dashed red;
+            /* outline shorthand */
+        }
+
+        .offset {
+
+            outline: 3px solid dimgray;
+            outline-offset: 10px;
+        }
+
+        /* add .offset rule: outline + outline-offset */
+    </style>
+</head>
+
+<body>
+
+    <div class="box solid">Solid green outline (individual properties)</div>
+    <div class="box dashed">Dashed red outline (shorthand)</div>
+    <div class="box offset">Outline with 10px offset from border</div>
+
+</body>
+
+</html>

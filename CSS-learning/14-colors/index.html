@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color-gradient</title>
+    <style>
+        h1 {
+            background-color: aqua;
+            opacity: 0.5;
+        }
+
+        .para1 {
+            background-image: linear-gradient(to bottom right, cyan, blue);
+        }
+
+        .para2 {
+            background-image: radial-gradient(red 1%, green, cyan, blue);
+        }
+
+        .para3 {
+            background-image: conic-gradient(red, green, cyan, blue);
+        }
+
+        .box {
+            width: 250px;
+            height: 250px;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+        }
+
+        .abc {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* text-overflow: clip; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>i am heading of this page</h1>
+    <p class="para1">This is the first paragraph.</p>
+    <p class="para2">This is the second paragraph.</p>
+    <p class="para3">This is the third paragraph.</p>
+    <div class="box">abcd Lord Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi a aut ut atque iure.
+        Neque voluptate blanditiis, sapiente repellat sunt totam nam esse iure voluptates nostrum enim recusandae
+        incidunt sint!
+        <div class="abc">ui quos. Repellendus, commodi.lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Voluptas</div>div>, voluptate.ipsa pariatur sequi quos. Repellendus, commodi.lorem ipsum
+        dolor sit amet consectetur
+        adipisicing elit. Voluptas, voluptate.
+    </div>
+    </div>
+</body>
+
+</html>

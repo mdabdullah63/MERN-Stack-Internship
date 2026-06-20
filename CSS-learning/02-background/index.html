@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background concept</title>
+
+    <style>
+        p {
+            background-color: lightblue;
+            opacity: 0.3;
+        }
+
+        h1 {
+            width: 300px;
+            height: 400px;
+            background-image: url("../assets/img.jpeg");
+        }
+
+        h2 {
+            background-image: url("../assets/img.jpeg");
+            background-repeat: repeat-x;
+            /* it is used to repeat the background image in x axis */
+            /* background-repeat:no-repeat; */
+        }
+
+        h3 {
+            width: 300px;
+            height: 400px;
+            background-image: url("../assets/favi-icon.png");
+            background-position: top right;
+            /* it is used to set the starting position of the background image */
+            background-color: blueviolet;
+        }
+
+        #attachment {
+            background-image: url("../assets/img.jpeg");
+            background-repeat: no-repeat;
+            background-position: right top;
+
+            /* it specifies whether the background image should scroll or be fixed */
+            background-attachment: fixed;
+
+            /* background-attachment:scroll; */
+            /* it specify that the background image should scroll with the page */
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="attachment">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Assumenda, rem pariatur, optio a aliquid nemo quasi velit
+        at esse quaerat molestias.
+    </p>
+
+    <h1>Hello its me</h1>
+
+    <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        At odit aliquid voluptatum magni quos iste.
+    </h2>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Doloribus, aspernatur? Ad ipsum modi reiciendis laboriosam.
+    </p>
+
+    <h3>
+        hey i am top right heading
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </h3>
+
+</body>
+
+</html>

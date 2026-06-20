@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and inline block </title>
+    <style>
+        img {
+            height: 80px;
+            width: 80px;
+            float: right;
+            /* float allows elements to be taken out of the normal flow and positioned to the left or right of their container */
+        }
+
+        #img2 {
+            border-color: red;
+            float: left;
+        }
+
+        .main::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .box {
+            width: 33.33%;
+            float: left;
+        }
+        .conatiner{
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../assets/img.jpeg" alt="image">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum aspernatur, eos id exercitationem, quasi, nostrum
+        consequuntur saepe error debitis delectus ea est in. Aut ipsam similique dignissimos quisquam vitae voluptates.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore facilis minima libero cumque debitis quis sunt
+        iusto quas, adipisci odit totam exercitationem, nulla doloribus odio perferendis, suscipit assumenda commodi
+        doloremque.
+    </p>
+    <img id="img2" src="../assets/img.jpeg" alt="image">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum aspernatur, eos id exercitationem, quasi, nostrum
+        consequuntur saepe error debitis delectus ea est in. Aut ipsam similique dignissimos quisquam vitae voluptates.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore facilis minima libero cumque debitis quis sunt
+        iusto quas, adipisci odit totam exercitationem, nulla doloribus odio perferendis, suscipit assumenda commodi
+        doloremque.
+    </p>
+    <div class="main">
+        <div class="box class1">
+            <h3>Static Position</h3>
+            <img src="../assets/img.jpeg" alt="image">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique inventore aliquid
+                voluptates vero dolores recusandae earum error blanditiis natus.
+            </p>
+        </div>
+
+        <div class="box class2">
+            <h3>Relative Position</h3>
+            <img src="../assets/img.jpeg" alt="image">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis repellendus
+                eum ad laudantium deserunt voluptatibus repudiandae optio adipisci.
+            </p>
+        </div>
+
+        <div class="box class3">
+            <h3>Absolute Position</h3>
+            <img src="../assets/img.jpeg" alt="image">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur accusamus
+                ratione molestiae distinctio pariatur deleniti.
+            </p>
+        </div>
+    </div>
+
+    <div class="conatiner">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, ipsum.
+        </p>
+    </div>
+</body>
+
+</html>
