@@ -40,7 +40,7 @@ Real-world tasks and applications developed during internship training.
 
 **Md Abdullah**
 
-B.Tech CSE Student
+B.Tech IT Student
 
 GitHub: https://github.com/mdabdullah63
 
