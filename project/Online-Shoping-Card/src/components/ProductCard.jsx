@@ -47,7 +47,8 @@ function ProductCard({ product }) {
         >
           <CardMedia
             component="img"
-            image={product.image}
+            // image={product.image}
+            image={product.thumbnail}
             alt={product.title}
             sx={{
               maxHeight: "100%",
@@ -85,7 +86,10 @@ function ProductCard({ product }) {
           </Typography>
 
           <Typography variant="body2">
-            ⭐ {product.rating?.rate}
+            ⭐ {
+            // product.rating?.rate
+            product.rating
+            }
           </Typography>
         </CardContent>
 
@@ -157,7 +161,8 @@ function ProductCard({ product }) {
               }}
             >
               <img
-                src={product.image}
+                // src={product.image}
+                image={product.thumbnail}
                 alt={product.title}
                 style={{
                   width: "100%",
@@ -210,7 +215,9 @@ function ProductCard({ product }) {
                 }}
               >
                 <Chip
-                  label={`⭐ ${product.rating?.rate}`}
+                  label={`⭐ ${
+                    //product.rating?.rate
+                    product.rating}`}
                   color="warning"
                 />
 

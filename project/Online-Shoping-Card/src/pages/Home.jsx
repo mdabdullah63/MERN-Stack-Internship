@@ -4,7 +4,6 @@ import CircularProgs from "@mui/material/CircularProgress";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-
 import Loader from "../components/Loader";
 import ProductCard from "../components/ProductCard";
 
@@ -16,28 +15,38 @@ function Home() {
   const { enqueueSnackbar } = useSnackbar();
 
   useEffect(() => {
+    // API se products fetch karne wala functio
     const fetchProducts = async () => {
       try {
-        const res = await fetch(
-          "https://fakestoreapi.com/products"
-        );
+        // Fake Store API (currently down)
+        // const res = await fetch(
+        //   "https://fakestoreapi.com/products"
+        // );
 
+        // DummyJSON API
+        const res = await fetch(
+          "https://dummyjson.com/products"
+        );
         if (!res.ok) {
           throw new Error("Failed to fetch products");
         }
         const data = await res.json();
 
-        setProducts(data);
+        setProducts(data.products);
+
       } catch (error) {
         enqueueSnackbar("Failed to load products", {
           variant: "error",
         });
+
         console.error(error);
       } finally {
         setLoading(false);
       }
     };
-    fetchProducts();}, [enqueueSnackbar]);
+    fetchProducts();
+
+  }, [enqueueSnackbar]);
   const handleLoadMore = () => {
     setLoadingMore(true);
     setTimeout(() => {

@@ -25,6 +25,10 @@ function Cart({ setShowCart }) {
       total + item.price * item.quantity,
     0
   );
+  const removeFromCartHandle = (id) => {
+    dispatch(removeFromCart(id));
+  };
+
   return (
     <Box
       sx={{
@@ -73,7 +77,8 @@ function Cart({ setShowCart }) {
             >
               <CardMedia
                 component="img"
-                image={item.image}
+                // image={item.image}
+                image={item.thumbnail}
                 alt={item.title}
                 sx={{
                   width: 120,
@@ -177,12 +182,7 @@ function Cart({ setShowCart }) {
                     mt: 2,
                     width: "fit-content",
                   }}
-                  onClick={() =>
-                    dispatch(
-                      removeFromCart(item.id)
-                    )
-                  }
-                >
+                  onClick={() => removeFromCartHandle(item.id)}>
                   Remove Item
                 </Button>
               </CardContent>
