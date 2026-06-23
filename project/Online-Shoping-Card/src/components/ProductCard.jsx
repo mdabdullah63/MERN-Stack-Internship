@@ -87,8 +87,8 @@ function ProductCard({ product }) {
 
           <Typography variant="body2">
             ⭐ {
-            // product.rating?.rate
-            product.rating
+              // product.rating?.rate
+              product.rating
             }
           </Typography>
         </CardContent>
@@ -161,8 +161,7 @@ function ProductCard({ product }) {
               }}
             >
               <img
-                // src={product.image}
-                image={product.thumbnail}
+                src={product.thumbnail}
                 alt={product.title}
                 style={{
                   width: "100%",
