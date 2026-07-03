@@ -24,7 +24,7 @@ NPM init is used to intinalization of NPM
 
         "start": "node index.js"
         we can call directly by  start
-        npm start 
+        npm start
   },
   "author": "Md Abdullah",
   "license": "ISC",
