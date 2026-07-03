@@ -6,6 +6,7 @@ Hello World
 node need to write js because node only run js file so it defult select js extension
 
 node index.js
+
 Hello World
 
 DOM and Window are no avaialbe in Node V8 engine
