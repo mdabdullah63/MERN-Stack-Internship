@@ -4,10 +4,7 @@ What is Express.js?
 
 Express.js is a fast, lightweight, and minimal web framework for Node.js
 used to build web applications and REST APIs easily.
-*/
 
-
-/*
 Why do we use Express.js?
 
 - Reduces boilerplate code.
@@ -15,7 +12,7 @@ Why do we use Express.js?
 - Handles HTTP methods easily.
 - Supports middleware.
 - Makes API development faster and cleaner.
-\
+
 What problem does Express.js solve?
 
 Without Express:
@@ -43,8 +40,7 @@ app.delete()  -> Delete data
 
 
 /*
-Interview Definition
-
+Definition
 Express.js is a lightweight web framework for Node.js that simplifies
 routing, middleware, request/response handling, and REST API development,
 making web applications faster and easier to build.

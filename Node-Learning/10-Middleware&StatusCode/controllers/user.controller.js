@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const users = require("../data/MOCK_DATA.json");
+const users = require("../data/user.data.json");
 
 // GET
 const getUser = (req, res) => {
@@ -29,7 +29,7 @@ const createUser = (req, res) => {
   users.push(newUser);
 
   fs.writeFile(
-    "./data/MOCK_DATA.json",
+    "../data/user.data.json",
     JSON.stringify(users, null, 2),
     (err) => {
       if (err) {
@@ -66,7 +66,7 @@ const replaceUser = (req, res) => {
   };
 
   fs.writeFile(
-    "./data/MOCK_DATA.json",
+    "../data/user.data.json",
     JSON.stringify(users, null, 2),
     (err) => {
       if (err) {
@@ -104,7 +104,7 @@ const updateUser = (req, res) => {
   };
 
   fs.writeFile(
-    "./data/MOCK_DATA.json",
+    "../data/user.data.json",
     JSON.stringify(users, null, 2),
     (err) => {
       if (err) {
@@ -134,17 +134,9 @@ const deleteUser = (req, res) => {
   }
 
   users.splice(index, 1);
-/*
-splice()
-Use:
-Array me elements ko add remove ya replace karne ke liye use hota hai.
-Ye original array ko modify (change) kar deta hai.
-Syntax:
-array.splice(startIndex, deleteCount, item1, item2, ...);
-item1...-> (Optional) Naye elements add karne ke liye.
-*/
+
   fs.writeFile(
-    "./data/MOCK_DATA.json",
+    "../data/user.data.json",
     JSON.stringify(users, null, 2),
     (err) => {
       if (err) {
