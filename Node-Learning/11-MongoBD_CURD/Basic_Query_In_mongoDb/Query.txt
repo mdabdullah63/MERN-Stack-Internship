@@ -1,0 +1,23 @@
+
+| Command                              | Purpose                        |
+| ------------------------------------ | ------------------------------ |
+| `show dbs`                           | Sabhi databases dikhao         |
+| `use UserDB-1`                       | Database select/create karo    |
+| `db`                                 | Current database dikhao        |
+| `show collections`                   | Sabhi collections dikhao       |
+| `db.users.find()`                    | Sabhi documents dikhao         |
+| `db.users.findOne()`                 | Ek document dikhao             |
+| `db.users.insertOne({})`             | Ek document insert karo        |
+| `db.users.insertMany([])`            | Multiple documents insert karo |
+| `db.users.find({name:"Md"})`         | Condition se search karo       |
+| `db.users.updateOne({}, {$set:{}})`  | Ek document update karo        |
+| `db.users.updateMany({}, {$set:{}})` | Multiple documents update karo |
+| `db.users.deleteOne({})`             | Ek document delete karo        |
+| `db.users.deleteMany({})`            | Multiple documents delete karo |
+| `db.users.countDocuments()`          | Total documents count karo     |
+| `db.users.find().sort({name:1})`     | Ascending sort karo            |
+| `db.users.find().sort({name:-1})`    | Descending sort karo           |
+| `db.users.find().limit(5)`           | Sirf 5 documents dikhao        |
+| `db.users.find().skip(5)`            | Pehle 5 documents skip karo    |
+| `db.dropDatabase()`                  | Current database delete karo   |
+| `db.users.drop()`                    | Collection delete karo         |
