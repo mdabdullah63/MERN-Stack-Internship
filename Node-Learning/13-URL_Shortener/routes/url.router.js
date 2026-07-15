@@ -1,6 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const {handleGenerateURL}=require("../controllers/url.controller")
-router.post('/',handleGenerateURL);
+const { handleGenerateURL, shortId, serverSideRander, Htmlsending } = require("../controllers/url.controller")
+router.post("/", handleGenerateURL);
+router.get("/html", Htmlsending);
 
-module.exports=router;
+router.get("/test", serverSideRander);
+router.get("/:shortId", shortId);
+module.exports = router;

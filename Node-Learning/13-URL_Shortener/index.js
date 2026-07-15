@@ -1,35 +1,27 @@
-const express=require("express")
-const urlRoute = require("./routes/url.router")
-const {connectMongoDB}= require("./connect")
-const URL =require ("./model/url")
-const app= express();
- const PORT=8000;
- app.use(express.urlencoded({ extended: false }));
+const express = require("express");
+const cookieParser = require("cookie-parser");
+const {restrictToLogin} =require("./Middleware/auth")
+const path = require("path");
+const urlRoute = require("./routes/url.router");
+const { connectMongoDB } = require("./connect");
+const UserRoute=require("./routes/user.router")
+const app = express();
+const PORT = 8000;
+app.use(cookieParser())
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
+app.set("view engine", "ejs");
+app.set("views", path.resolve("./views"));
+
+app.use("/url", restrictToLogin,urlRoute);
+app.use("/user", UserRoute);
+
+
 connectMongoDB("mongodb://127.0.0.1:27017/short-url")
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.log("MongoDB Error:", err));
 
-app.get("/:shortId", async (req, res) => {
-  const shortId = req.params.shortId;
-
-  const entry = await URL.findOneAndUpdate(
-    { shortId },
-    {
-      $push: {
-        visiteHistory: {
-          timestamp: Date.now(),
-        },
-      },
-    },
-    { new: true }
-  );
-
-  if (!entry) {
-    return res.status(404).json({ message: "Short URL not found" });
-  }
-
-  return res.redirect(entry.redirectUrl);
+app.listen(PORT, () => {
+  console.log(`Server is running at PORT ${PORT}`);
 });
-app.use(express.json())
- app.use("/url",urlRoute)
-app.listen(PORT,() =>console.log(`Server is running at PORT${PORT}`))
